@@ -1,0 +1,22 @@
+@media (max-width: 800px) {
+    .login {
+        flex-direction: column;
+        /* padding-top: 0; */
+        padding-top: 80px;
+    }
+    .image , .forms {
+        width: 100%;
+    }
+    .image {
+        display: none;
+    }
+}
+@media (max-width: 1275px) {
+    .login {
+        margin-top: -60px;
+        padding-top: 80px;
+    }
+    .image {
+        padding: 40px;
+    }
+}

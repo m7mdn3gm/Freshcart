@@ -1,0 +1,38 @@
+
+
+.boxs-product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    &:hover {
+        border: none;
+    }
+}
+.box-product {
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    .fav {
+        position: absolute;
+        padding: 5px;
+        font-size: 23px;
+        top: 50px;
+        right: -70px;
+        transition: 0.6s;
+        i {
+            padding: 4px;
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            transition: 0.6s;
+        }
+    }
+    &:hover .fav {
+        right: 13px;
+    }
+}

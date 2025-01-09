@@ -1,0 +1,75 @@
+.navbar {
+    z-index: 1050;
+}
+.bth {
+    background: linear-gradient(40deg, #000, #0284c7 , #000 );
+}
+.navbarRight .bars {
+    display: none;
+}
+.navbarRight .links .logout-icon {
+    display: none;
+}
+@media (max-width: 1275px) {
+    .navbarMiddle  {
+        display: none;
+    }
+ 
+    .navbarRight .bars {
+        display: block;
+    }
+    .navbarRight .links .logout-icon {
+        display: block;
+    }
+    .navbarRight .links .logout {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    .navbarRight .icons {
+        display: none;
+    }
+}
+.show-list-mobile {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    backdrop-filter: blur(6px);
+    animation: moveModel 0.7s ;
+
+}
+.show-list-mobile .items {
+    position: absolute;
+    top: 79px;
+    left: 19%;
+    background-color: #e5e7eb;
+    border-radius: 6px;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+    border: 2px solid #ccc;
+
+}
+.show-list-mobile .items li:not(:last-child) {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+.show-list-mobile .items button {
+    color: #0284c7;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+@keyframes moveModel {
+    0% {
+        scale: 0;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}

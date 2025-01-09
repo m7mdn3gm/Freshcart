@@ -1,0 +1,20 @@
+@media (max-width: 800px) {
+    .register {
+        flex-direction: column-reverse;
+    }
+    .image , .forms {
+        width: 100%;
+    }
+    .image {
+        display: none;
+    }
+}
+@media (max-width: 1275px) {
+    .register {
+        margin-top: -60px;
+        padding-top: 80px;
+    }
+    .image {
+        padding: 40px;
+    }
+}

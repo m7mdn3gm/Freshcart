@@ -1,0 +1,12 @@
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 20px;
+}
+.box:hover .layer {
+    opacity: 1;
+}
+.layer {
+    opacity: 0;
+    transition: 0.6s;
+}

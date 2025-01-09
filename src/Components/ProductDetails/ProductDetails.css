@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+    .boxs-productdetails {
+        flex-direction: column;
+    }
+    .box-productdetails:last-child {
+        width: 100%;
+    }
+}
