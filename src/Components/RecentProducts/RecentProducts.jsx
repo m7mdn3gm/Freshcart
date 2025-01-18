@@ -34,7 +34,5 @@ export default function RecentProducts({ product }) {
 
       </div>
     </div>
-
-
   </>
 }
